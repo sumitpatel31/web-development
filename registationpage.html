@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+   
+    <title>Q10.1 </title>
+    <style>
+        body{
+            background-color: rgb(118, 202, 230);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .circular--landscape {
+            border-top-left-radius: 30% 50%;
+            border-top-right-radius: 50% 50%; 
+            border-bottom-right-radius: 50% 50%;
+            border-bottom-left-radius: 50% 50%; 
+        }
+
+        img {
+            margin-left: 40%;
+            height: 200px;
+            width: 200px;
+        }
+        form{
+            text-align: center;
+        }
+        input{
+            border: 2px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="circular--landscape"> <img src="SOA.png" /> </div><br>
+
+        <h1 style="text-align: center">Resistration</h1>
+
+    </div>
+    <br>
+    <br>
+    <form action="/birds">
+        <p id="name">Username
+            <input type="text" placeholder="Entername" id="i1">
+        </p>
+        <br>
+        <p id="email">Email
+            <input type="text" placeholder="Enter email.." id="i2"
+                formmethod=" /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+        </p>
+        <br>
+        <p id="mobile">Mobile :<input type="number" placeholder="Enter Mobile no" id="i3" pattern="[0-9]{9,11}"></p>
+        <p>Gender :
+            <input type="radio" id="Male" name="Gender" value="M">
+              <label for="html">Male</label>
+              <input type="radio" id="Female" name="Gender" value="F">
+              <label for="Female">Female</label>
+             
+
+        </p>
+        <p>city  :
+        <select name="place" id="user6">
+            <option value="Bbsr">Bhubneswar</option>
+            <option value="Balasore">Balasore</option>
+            <option value="sng">Sundargarh</option>
+        </select>
+        </p>
+
+        <p id="password">Password : <input type="password" id="user7" placeholder="Enter Passwords"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </p>
+        <input type="submit" value=" Sign up ">
+
+</body>
+
+</html>
